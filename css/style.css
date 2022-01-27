@@ -1,0 +1,56 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #F5F7FA;
+}
+
+h1 {
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 55px;
+}
+
+p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: row-reverse;
+    width: auto;
+    background-color: #fff;
+    margin: 40px auto;
+}
+
+.main-content {
+    
+}
+
+.about-me {
+    
+}
+
+.about-my-profession {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+}
+
+.my-projects {
+    
+}
+
+.my-work-experience {
+
+}
+
+.my-education {
+
+}
+
+.sidebar {
+    background-color: #1E2939;
+}
+
+
