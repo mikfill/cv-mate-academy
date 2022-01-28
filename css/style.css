@@ -3,18 +3,6 @@ body {
     background-color: #F5F7FA;
 }
 
-h1 {
-    font-size: 45px;
-    font-weight: 700;
-    line-height: 55px;
-}
-
-p {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 24px;
-}
-
 .main-container {
     display: flex;
     flex-direction: row-reverse;
@@ -28,29 +16,246 @@ p {
 }
 
 .about-me {
-    
+    /*position: absolute;
+    width: 400px;
+    height: 230px;
+    left: 498px;
+    top: 142px; */
 }
 
-.about-my-profession {
+.about-me h2 {
     font-size: 14px;
     font-weight: 700;
     line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.about-me h1 {
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 55px;
+    letter-spacing: 0em;
+    text-align: left;    
+}
+
+.about-me p {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
 }
 
 .my-projects {
-    
+/*     position: absolute;
+    width: 485px;
+    height: 107px;
+    left: 498px;
+    top: 412px; */
+}
+
+.my-projects h3 {
+    color:black;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 27px;
+    text-align: left;
+}
+
+.my-projects ol {
+    font-style: normal;
+}
+
+.my-projects ol li {
+    color:black;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.my-projects ol li::marker {
+    color: black;
+}
+
+.my-projects ol li a {
+    color: #595959;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.my-projects ol li span {
+    color: #595959;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
 }
 
 .my-work-experience {
+    text-align: left;
+    font-style: normal;
+}
+
+.my-work-experience h3 {
+    color: black;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 27px;
+    letter-spacing: 0em;    
+}
+
+.my-work-experience div h4 {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0em;
+}
+
+.my-work-experience div h4 .position {
+    color: black;
+}
+
+.my-work-experience div h4 .place-work {
+    color: #FB6D3A;
+}
+
+.my-work-experience div p {
+    color: #A8A8A8;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0em;
+}
+
+.my-work-experience div p .separator {
+    color: black;
+}
+
+.my-work-experience div ul {
 
 }
 
-.my-education {
+.my-work-experience div ul li {
+    color: #595959;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+}
 
+.my-work-experience div ul li::marker {
+    color: #595959;
+}
+.my-education {
+    font-style: normal;
+    font-weight: normal;
+}
+
+.my-education h3 {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 27px;
+}
+
+.my-education h4 {
+    color: #F86D3A;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.my-education h5 {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;   
+}
+
+.my-education p {
+    color: #A8A8A8;
+    font-size: 12px;
+    line-height: 15px;    
+}
+
+.my-education p .separator {
+    color: black;
 }
 
 .sidebar {
+    font-style: normal;
+    font-weight: normal;
     background-color: #1E2939;
+    color: #fff;
 }
 
+.sidebar img {
+    /* height: 1319px; */
+    width: 370px;
+    /* left: 45px;
+    top: 21px;
+    border-radius: 0px; */
+}
+
+.sidebar-contacts {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.sidebar-contacts h3 {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 27px;
+    letter-spacing: 0em;
+}
+
+.sidebar-contacts div span {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.sidebar-contacts div a {
+    color: #fff;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    opacity: 0.5;
+}
+
+.sidebar-my-skills {
+    font-style: normal;
+}
+
+.sidebar-my-skills h3 {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 27px;
+}
+
+.sidebar-my-skills ul {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.sidebar-my-skills ul li {
+    color: #fff;
+}
+
+.sidebar-my-skills ul li::marker {
+    color: #FB6D3A;
+}
 
