@@ -192,21 +192,30 @@ body {
 }
 
 .sidebar {
+    height: auto;
+    width: 370px;
+    padding: 40px 0;
+    border-radius: 0px;
     font-style: normal;
     font-weight: normal;
     background-color: #1E2939;
     color: #fff;
 }
 
+.sidebar h3 {
+    font-size: 22px;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    letter-spacing: 0em;
+}
+
 .sidebar img {
-    /* height: 1319px; */
-    width: 370px;
-    /* left: 45px;
-    top: 21px;
-    border-radius: 0px; */
+ 
 }
 
 .sidebar-contacts {
+    margin: 40px 0 0 40px;
     font-size: 22px;
     font-weight: 700;
     line-height: 27px;
@@ -215,10 +224,7 @@ body {
 }
 
 .sidebar-contacts h3 {
-    font-size: 22px;
-    font-weight: 700;
-    line-height: 27px;
-    letter-spacing: 0em;
+    /* color: yellow */
 }
 
 .sidebar-contacts div span {
@@ -229,23 +235,33 @@ body {
 
 .sidebar-contacts div a {
     color: #fff;
+    padding: 10px;
     font-weight: normal;
     font-size: 14px;
     line-height: 24px;
     opacity: 0.5;
 }
 
+.sidebar-contacts div .id1 {
+
+}
+
+.sidebar-contacts div .id2-or-next {
+    margin-left: 20px;
+    /* color:yellow; */
+}
+
 .sidebar-my-skills {
+    padding: 0;
     font-style: normal;
 }
 
 .sidebar-my-skills h3 {
-    font-weight: bold;
-    font-size: 22px;
-    line-height: 27px;
+    /* color: red; */
 }
 
 .sidebar-my-skills ul {
+    padding: 0 0 0 20px;
     font-weight: normal;
     font-size: 14px;
     line-height: 24px;
