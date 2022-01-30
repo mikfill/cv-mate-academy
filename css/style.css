@@ -1,34 +1,37 @@
 body {
     font-family: 'Montserrat', sans-serif;
+    width: 1280px;
+    
     background-color: #F5F7FA;
+    /* box-shadow: 6px 6px 20px #1E2939; */
 }
 
 .main-container {
     display: flex;
     flex-direction: row-reverse;
-    width: auto;
+    width: 1200px;
     background-color: #fff;
-    margin: 40px auto;
+    box-shadow: 6px 6px 20px #1E2939;
+    padding: 20px 0px 20px 25px;
 }
 
 .main-content {
-    
+    /* margin: 120px auto auto 40px; */
+    padding: 60px 200px 40px 65px; 
+    width: 485px;
 }
 
 .about-me {
-    /*position: absolute;
-    width: 400px;
-    height: 230px;
-    left: 498px;
-    top: 142px; */
+    margin-bottom: 40px;
 }
 
 .about-me h2 {
+    padding-left: 5px;
     font-size: 14px;
     font-weight: 700;
     line-height: 17px;
-    letter-spacing: 0em;
-    text-align: left;
+    /* margin-bottom: 20px; */
+    color: black;
 }
 
 .about-me h1 {
@@ -36,25 +39,21 @@ body {
     font-style: normal;
     font-weight: 700;
     line-height: 55px;
-    letter-spacing: 0em;
-    text-align: left;    
+    color: black;
+    margin-bottom: 25px;  
 }
 
 .about-me p {
+    text-align: justify;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
-    letter-spacing: 0em;
-    text-align: left;
+    color: #595959;
 }
 
 .my-projects {
-/*     position: absolute;
-    width: 485px;
-    height: 107px;
-    left: 498px;
-    top: 412px; */
+    margin-bottom: 50px;
 }
 
 .my-projects h3 {
@@ -66,6 +65,7 @@ body {
 }
 
 .my-projects ol {
+    padding: 0 0 0 15px;
     font-style: normal;
 }
 
@@ -91,6 +91,13 @@ body {
     line-height: 24px;
     letter-spacing: 0em;
     text-align: left;
+    padding-left: 5px;
+    text-decoration: none;
+}
+
+.my-projects ol li a:hover {
+    text-decoration: underline;
+    color: #FB6D3A; 
 }
 .my-projects ol li span {
     color: #595959;
@@ -104,6 +111,7 @@ body {
 }
 
 .my-work-experience {
+    padding: 0px;
     text-align: left;
     font-style: normal;
 }
@@ -121,6 +129,7 @@ body {
     font-weight: 700;
     line-height: 20px;
     letter-spacing: 0em;
+    margin-bottom: 0 0 10px 0;
 }
 
 .my-work-experience div h4 .position {
@@ -137,14 +146,16 @@ body {
     font-weight: 400;
     line-height: 15px;
     letter-spacing: 0em;
+    margin: 0 0 10px 0;
 }
 
-.my-work-experience div p .separator {
+.separator {
     color: black;
+    font-weight: 400;
 }
 
 .my-work-experience div ul {
-
+    padding: 0 0 0 20px;
 }
 
 .my-work-experience div ul li {
@@ -155,14 +166,16 @@ body {
 }
 
 .my-work-experience div ul li::marker {
-    color: #595959;
+    color: black;
 }
 .my-education {
-    font-style: normal;
+    padding: 0px;
+    text-align: left;
     font-weight: normal;
 }
 
 .my-education h3 {
+    padding: auto;
     font-weight: bold;
     font-size: 22px;
     line-height: 27px;
@@ -223,12 +236,8 @@ body {
     text-align: left;
 }
 
-.sidebar-contacts h3 {
-    /* color: yellow */
-}
-
 .sidebar-contacts div span {
-    font-weight: bold;
+    font-weight: 700;
     font-size: 14px;
     line-height: 24px;
 }
@@ -238,40 +247,51 @@ body {
     padding: 10px;
     font-weight: normal;
     font-size: 14px;
+    text-decoration: none;
     line-height: 24px;
     opacity: 0.5;
 }
 
-.sidebar-contacts div .id1 {
-
+.sidebar-contacts div a:hover {
+    text-decoration: underline;
+    color: #FB6D3A;
 }
 
-.sidebar-contacts div .id2-or-next {
+.id2-or-next {
     margin-left: 20px;
-    /* color:yellow; */
 }
 
 .sidebar-my-skills {
-    padding: 0;
-    font-style: normal;
+    padding: 0px;
 }
 
 .sidebar-my-skills h3 {
-    /* color: red; */
+    padding: 40px 0 0 0;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 27px;
 }
 
 .sidebar-my-skills ul {
-    padding: 0 0 0 20px;
-    font-weight: normal;
+    padding: 0 0 0 15px;
+    color: white;
+    font-family: Montserrat;
     font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
     line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+
 }
 
 .sidebar-my-skills ul li {
-    color: #fff;
+    padding-left: 10px;
 }
 
 .sidebar-my-skills ul li::marker {
     color: #FB6D3A;
+    padding: 0;
 }
 
