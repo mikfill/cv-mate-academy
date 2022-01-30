@@ -1,15 +1,15 @@
 body {
     font-family: 'Montserrat', sans-serif;
-    width: 1280px;
+    /* width: 1280px; */
     
     background-color: #F5F7FA;
     /* box-shadow: 6px 6px 20px #1E2939; */
 }
 
 .main-container {
-    display: flex;
+    display: inline-flex;
     flex-direction: row-reverse;
-    width: 1200px;
+    /* width: 1200px; */
     background-color: #fff;
     box-shadow: 6px 6px 20px #1E2939;
     padding: 20px 0px 20px 25px;
@@ -18,7 +18,7 @@ body {
 .main-content {
     /* margin: 120px auto auto 40px; */
     padding: 60px 200px 40px 65px; 
-    width: 485px;
+    /* width: 485px;  */
 }
 
 .about-me {
@@ -50,6 +50,7 @@ body {
     font-weight: 400;
     line-height: 24px;
     color: #595959;
+    width: 485px;
 }
 
 .my-projects {
