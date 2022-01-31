@@ -1,7 +1,7 @@
 body {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: left;
+    align-items: left;
     font-family: 'Montserrat', sans-serif;
     background-color: #F5F7FA;
 }
