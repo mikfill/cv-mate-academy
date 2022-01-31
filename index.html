@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Resume</title>
+        <title>Filippenko.M Resume</title>
         <link rel="icon" href="./ico/myIcon.png">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,24 +32,31 @@
                 <div class="my-projects">
                     <h3>Projects</h3>
 
-                    <ol>
-                        <li>
-                            <a href="https://github.com/mikfill/myWebApibackup">SignalR-Test-api</a>
-                            <span>...........................</span>
-                            [<span><a href="https://ru.wikipedia.org/wiki/C_Sharp">C#</a></span> ]
-                        </li>
-                        <li>
-                            <a href="https://github.com/mikfill/sipHouse-api">SipHouse-Calculator-api</a>
-                            <span>........</span>
-                            [<span><a href="https://ru.wikipedia.org/wiki/C_Sharp">C#</a></span> ]
-                        </li>
-                        <li>
-                            <a href="https://github.com/mikfill/my-rezume">My-Rezume-GoIT</a>
-                            <span>........................</span>
-                            [<span><a href="https://ru.wikipedia.org/wiki/HTML">HTML</a>, 
-                                   <a href="https://ru.wikipedia.org/wiki/CSS">CSS</a></span> ]
-                        </li>
-                    </ol>
+                    <table>
+                        <td>
+                            <ol>
+                                <li>
+                                    <a href="https://github.com/mikfill/myWebApibackup">SignalR-Test-api</a> 
+                                </li>
+                                <li>
+                                    <a href="https://github.com/mikfill/sipHouse-api">SipHouse-Calculator-api</a>
+                                </li>
+                                <li>
+                                    <a href="https://github.com/mikfill/my-rezume">My-Rezume-GoIT</a>
+                                </li>
+                            </ol>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>[<span><a href="https://ru.wikipedia.org/wiki/C_Sharp">C#</a></span>]</li>
+                                <li>[<span><a href="https://ru.wikipedia.org/wiki/C_Sharp">C#</a></span>]</li>
+                                <li>[<span><a href="https://ru.wikipedia.org/wiki/HTML">HTML</a> 
+                                           <a href="https://ru.wikipedia.org/wiki/CSS">CSS</a></span>]
+                                </li>
+                            </ul>
+                        </td>
+                    </table>
+
                 </div>
                 <!-- My work experience section -->
                 <div class="my-work-experience">
@@ -60,7 +67,7 @@
                         <h4><span class="position">Traine</span> <span class="place-work">FlexDev</span></h4>
                         <p>December 2021 - up to now  <span class="separator">|</span>  Ukraine</p>
                         <ul>
-                            <li>Start practice not earlier than 9:00. Finish the practice not later than 19:30</li>
+                            <li>Start practice not earlier than 9:00. Finish not later than 19:30</li>
                             <li>Comply with the requirements of confidentiality</li>
                             <li>Practice time tracking with top tracker</li>
                         </ul>
@@ -91,16 +98,20 @@
                 <!-- My education section-->
                 <div class="my-education">
                     <h3>Education</h3>
-                    <h4>National Technical University of Ukraine
-                        "Kyiv Polytechnic Institute"</h4>
-                    <h5>Faculty of Electric Power Engineering and Automatics</h5>
-                    <p>September 2015 - July 2018  <span class="separator">|</span>  Ukraine</p>
+
+                    <!-- Study one -->
+                    <div>
+                        <h4>National Technical University of Ukraine
+                            "Kyiv Polytechnic Institute"</h4>
+                        <h5>Faculty of Electric Power Engineering and Automatics</h5>
+                        <p>September 2015 - July 2018  <span class="separator">|</span>  Ukraine</p>
+                    </div>
                 </div>                                   
             </div>
             <!-- Sidebar section -->
             <aside class="sidebar">
-                <img src="./img/avatar_original.png" alt="my photo">
-
+                <img class="my-photo" src="./img/avatar_original.png" alt="my photo">
+                <div class="sidebar-content">
                 <!-- Contacts section -->
                 <div class="sidebar-contacts">
                     <h3>Contacts</h3>
@@ -116,6 +127,7 @@
                         <a class="id2-or-next" href="mailto:fonoman2303@gmail.com">Personal email address</a>
                     </div>
                 </div">
+                </div>
                 <!-- Tech skills section -->
                 <div class="sidebar-my-skills">
                     <h3>Tech Skills</h3>
@@ -125,12 +137,12 @@
                         <li>GIT</li>
                         <li>C#</li>
                         <li>.NET6</li>
-                        <li>EntityFrameworkCore</li>
-                        <li>ASP.NET</li>
+                        <!-- <li>EntityFrameworkCore</li>
+                        <li>ASP.NET</li> -->
                         <li>RESTful</li>
                         <li>MicrosoftSQL</li>
-                        <li>PostgreSQL</li>
-                        <li>T-SQL</li>
+                        <!-- <li>PostgreSQL</li>
+                        <li>T-SQL</li> -->
                     </ul>
                 </div>
                 <!-- Soft skills section -->
@@ -138,10 +150,10 @@
                     <h3>Soft Skills</h3>
                     <ul>
                         <li>Listening</li>
-                        <li>Reading body language</li>
-                        <li>Storytelling</li>
+                        <!-- <li>Reading body language</li> -->
+                        <!-- <li>Storytelling</li> -->
                         <li>Adaptibility</li>
-                        <li>Cooperation</li>
+                        <!-- <li>Cooperation</li> -->
                         <li>Friendliness</li>
                         <li>Disability awareness</li>
                         <li>Dealing with difficult situations</li>
@@ -149,6 +161,9 @@
                         <li>Perseverance</li>
                     </ul>
                 </div>
+                </div>
+                <!-- Skills cloud section -->
+                    <img class="myskills-cloud" src="./img/sidebar-myskills-cloud.png" alt="">
             </aside>
         </div>
     </body>

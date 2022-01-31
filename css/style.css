@@ -1,24 +1,26 @@
 body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-family: 'Montserrat', sans-serif;
-    /* width: 1280px; */
-    
     background-color: #F5F7FA;
-    /* box-shadow: 6px 6px 20px #1E2939; */
 }
 
 .main-container {
+    width: auto;
     display: inline-flex;
     flex-direction: row-reverse;
-    /* width: 1200px; */
     background-color: #fff;
     box-shadow: 6px 6px 20px #1E2939;
     padding: 20px 0px 20px 25px;
 }
 
 .main-content {
-    /* margin: 120px auto auto 40px; */
-    padding: 60px 200px 40px 65px; 
-    /* width: 485px;  */
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    width: 500px;
+    padding: 15px 40px 0px 50px; 
 }
 
 .about-me {
@@ -30,7 +32,6 @@ body {
     font-size: 14px;
     font-weight: 700;
     line-height: 17px;
-    /* margin-bottom: 20px; */
     color: black;
 }
 
@@ -44,20 +45,27 @@ body {
 }
 
 .about-me p {
+    width: auto;
     text-align: justify;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
     color: #595959;
-    width: 485px;
 }
 
 .my-projects {
-    margin-bottom: 50px;
+    color:black;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 0px;
 }
 
 .my-projects h3 {
+    margin: 0;
     color:black;
     font-size: 22px;
     font-weight: 700;
@@ -65,50 +73,49 @@ body {
     text-align: left;
 }
 
-.my-projects ol {
-    padding: 0 0 0 15px;
-    font-style: normal;
+.my-projects table ol {
+    padding-left: 15px;
 }
 
-.my-projects ol li {
-    color:black;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 24px;
-    letter-spacing: 0em;
-    text-align: left;
-}
-
-.my-projects ol li::marker {
-    color: black;
-}
-
-.my-projects ol li a {
+.my-projects table a {
     color: #595959;
     font-family: Montserrat;
-    font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
-    letter-spacing: 0em;
-    text-align: left;
-    padding-left: 5px;
     text-decoration: none;
 }
 
-.my-projects ol li a:hover {
+.my-projects table a:hover {
     text-decoration: underline;
     color: #FB6D3A; 
 }
+
+.my-projects table ol li::marker {
+    color: black;
+}
+
+.my-projects table ol li {
+    padding-left: 10px;
+}
+
 .my-projects ol li span {
     color: #595959;
     font-family: Montserrat;
-    font-size: 14px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0em;
     text-align: left;
+}
+
+.my-projects table td ul {
+    list-style: none;
+}
+
+.my-projects table td ul li span {
+    padding: 0 5px 0 5px;
 }
 
 .my-work-experience {
@@ -117,12 +124,14 @@ body {
     font-style: normal;
 }
 
+.my-work-experience div {
+    padding-left: 5px;
+}
 .my-work-experience h3 {
     color: black;
     font-size: 22px;
     font-weight: 700;
-    line-height: 27px;
-    letter-spacing: 0em;    
+    line-height: 27px;  
 }
 
 .my-work-experience div h4 {
@@ -147,7 +156,7 @@ body {
     font-weight: 400;
     line-height: 15px;
     letter-spacing: 0em;
-    margin: 0 0 10px 0;
+    margin: 0 0 10px 10px;
 }
 
 .separator {
@@ -169,12 +178,14 @@ body {
 .my-work-experience div ul li::marker {
     color: black;
 }
+
 .my-education {
     padding: 0px;
-    text-align: left;
-    font-weight: normal;
 }
 
+.my-education div {
+    padding-left:  10px;
+}
 .my-education h3 {
     padding: auto;
     font-weight: bold;
@@ -207,13 +218,20 @@ body {
 
 .sidebar {
     height: auto;
-    width: 370px;
-    padding: 40px 0;
+    width: 360px;
+    padding: 0px;
     border-radius: 0px;
     font-style: normal;
     font-weight: normal;
     background-color: #1E2939;
     color: #fff;
+}
+
+.my-photo {
+    padding: 30px 30px 0 30px;
+    width: 300px;
+    height: 320px;
+
 }
 
 .sidebar h3 {
@@ -224,17 +242,12 @@ body {
     letter-spacing: 0em;
 }
 
-.sidebar img {
-    width: 370px;
-}
-
 .sidebar-contacts {
     margin: 40px 0 0 40px;
     font-size: 22px;
     font-weight: 700;
     line-height: 27px;
-    letter-spacing: 0em;
-    text-align: left;
+
 }
 
 .sidebar-contacts div span {
@@ -245,7 +258,7 @@ body {
 
 .sidebar-contacts div a {
     color: #fff;
-    padding: 10px;
+    padding-left: 10px;
     font-weight: normal;
     font-size: 14px;
     text-decoration: none;
@@ -263,19 +276,11 @@ body {
 }
 
 .sidebar-my-skills {
-    padding: 0px;
-}
-
-.sidebar-my-skills h3 {
-    padding: 40px 0 0 0;
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 27px;
+    margin: 0px 0 0 40px;
 }
 
 .sidebar-my-skills ul {
-    padding: 0 0 0 15px;
+    padding: 0 0 0 20px;
     color: white;
     font-family: Montserrat;
     font-size: 14px;
@@ -293,6 +298,11 @@ body {
 
 .sidebar-my-skills ul li::marker {
     color: #FB6D3A;
-    padding: 0;
+}
+
+.myskills-cloud {
+    padding: 0px 55px 10px 55px;
+    width: 250px;
+    height: 250px;
 }
 
