@@ -1,7 +1,7 @@
 body {
     display: flex;
     justify-content:center;
-    align-items: left;
+    /*align-items: left;*/
     font-family: 'Montserrat', sans-serif;
     background-color: #F5F7FA;
 }
@@ -20,14 +20,15 @@ body {
     justify-content: start;
     flex-direction: column;
     width: 500px;
-    padding: 15px 40px 0px 50px; 
+    padding: 0px 40px 0px 50px; 
 }
 
 .about-me {
-    margin-bottom: 40px;
+    margin-bottom: 0px;
 }
 
 .about-me h2 {
+    margin: 0px;
     padding-left: 5px;
     font-size: 14px;
     font-weight: 700;
@@ -36,15 +37,16 @@ body {
 }
 
 .about-me h1 {
-    font-size: 45px;
+    font-size: 40px;
     font-style: normal;
     font-weight: 700;
     line-height: 55px;
     color: black;
-    margin-bottom: 25px;  
+    margin-bottom: 10px;  
 }
 
 .about-me p {
+    margin-top: 40px;
     width: auto;
     text-align: justify;
     font-size: 14px;
@@ -65,7 +67,7 @@ body {
 }
 
 .my-projects h3 {
-    margin: 0;
+    margin: 22px 0px;
     color:black;
     font-size: 22px;
     font-weight: 700;
@@ -73,8 +75,18 @@ body {
     text-align: left;
 }
 
+.my-projects table {
+    padding-left: 5px;
+}
+
 .my-projects table ol {
     padding-left: 15px;
+    
+}
+
+.my-projects table ol a {
+    color: blue;
+
 }
 
 .my-projects table a {
@@ -127,6 +139,7 @@ body {
 .my-work-experience div {
     padding-left: 5px;
 }
+
 .my-work-experience h3 {
     color: black;
     font-size: 22px;
@@ -184,7 +197,8 @@ body {
 }
 
 .my-education div {
-    padding-left:  10px;
+    padding-left:  5px;
+    margin-bottom: 10px;
 }
 .my-education h3 {
     padding: auto;
@@ -201,6 +215,7 @@ body {
 }
 
 .my-education h5 {
+    /*margin: 0px;*/
     font-weight: bold;
     font-size: 14px;
     line-height: 17px;   
@@ -228,9 +243,10 @@ body {
 }
 
 .my-photo {
-    padding: 30px 30px 0 30px;
-    width: 300px;
-    height: 320px;
+    padding: 30px 20px 0 20px;
+    border-radius: 0%;
+    width: 320px;
+    height: 250px;
 
 }
 
@@ -256,7 +272,8 @@ body {
 
 }
 
-.social-block a:hover {
+.social-ico:hover {
+    
     opacity: 1;
 }
 
