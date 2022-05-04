@@ -11,7 +11,7 @@ body {
     flex-direction: row-reverse;
     background-color: #fff;
     box-shadow: 6px 6px 20px #1E2939;
-    padding: 20px 0px 20px 25px;
+
 }
 
 .main-content {
@@ -270,10 +270,9 @@ body {
     color: #fff;
 }
 
-.my-photo {
-    padding: 30px 20px 0 20px;
-    border-radius: 0%;
-    height: 250px;
+.sidebar .my-photo {
+    width: 80%;
+    margin: 10%;
 }
 
 .sidebar h3 {
