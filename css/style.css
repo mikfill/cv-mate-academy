@@ -18,11 +18,16 @@ body {
     .main-container {
         flex-direction: column;
     }
+    .sidebar {
+        display: flex;
+        justify-content: center;
+    }
 }
 
 .main-content {
-    display: flexbox;
+    display: flex;
     flex-direction: column-reverse;
+    justify-content: flex-end;
     padding: 0px 20px 0px 30px; 
 }
 
@@ -248,13 +253,13 @@ body {
 }
 
 .sidebar-container {
-    padding: 0 0 0 20px;
+    padding: 0 5%;
 }
 
 .sidebar .my-photo {
     margin: 20px 0;
     width: 100%;
-    max-width: 260px;
+    max-width: 280px;
     height: auto;
     border-radius: 50%;
 }
