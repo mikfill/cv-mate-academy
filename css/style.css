@@ -36,7 +36,7 @@ body {
 }
 
 .about-me h1 {
-    font-size: 40px;
+    font-size: 30px;
     font-style: normal;
     font-weight: 700;
     line-height: 55px;
@@ -265,6 +265,7 @@ body {
 }
 
 .sidebar h3 {
+    margin: 10px 0;
     font-size: 22px;
     font-weight: 700;
     font-size: 22px;
