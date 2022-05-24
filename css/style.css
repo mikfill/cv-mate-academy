@@ -1,70 +1,33 @@
 body {
     display: flex;
-    justify-content:center;
+    justify-content: space-around;
     font-family: 'Montserrat', sans-serif;
     background-color: #F5F7FA;
 }
 
 .main-container {
-    max-width: 1200px;
-    display: inline-flex;
+    width: auto;
+    display: flex;
     flex-direction: row-reverse;
     background-color: #fff;
-    box-shadow: 6px 6px 20px #1E2939;
+    border: black 1px solid;
+    border-radius: 10px;
+}
 
+@media only screen and (max-width: 630px) {
+    .main-container {
+        flex-direction: column;
+    }
 }
 
 .main-content {
-    display: flex;
-    justify-content: start;
-    flex-direction: column;
-    padding: 0px 40px 0px 50px; 
-}
-
-/*Old monitors*/
-@media (max-width:1200px){
-    .main-container{
-        max-width: 970px;
-    }
-}
-
-/*Tablet*/
-@media (max-width:992px){
-    .main-container{
-        max-width: 750px;
-    }
-}
-
-/*Phone*/
-@media (max-width:767px){
-    .main-container {
-        padding: 0%;
-        max-width: none;
-        flex-direction: column;
-    }
-    .main-content {
-        padding-bottom: 10%;
-        width: min-content;
-    }
-    .about-me p {
-        
-    }
-    .sidebar {
-        width: min-content;
-    }
+    display: flexbox;
+    flex-direction: column-reverse;
+    padding: 0px 20px 0px 30px; 
 }
 
 .about-me {
-    margin-bottom: 0px;
-}
-
-.about-me h2 {
-    margin: 0px;
-    padding-left: 5px;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 17px;
-    color: black;
+    order: 1;
 }
 
 .about-me h1 {
@@ -76,6 +39,15 @@ body {
     margin-bottom: 10px;  
 }
 
+.about-me h2 {
+    margin: 0px;
+    padding-left: 5px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+    color: black;
+}
+
 .about-me p {
     margin-top: 40px;
     text-align: justify;
@@ -83,7 +55,7 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
-    color: #595959;
+    color: black;
 }
 
 .my-projects {
@@ -115,12 +87,12 @@ body {
 }
 
 .my-projects table ol a {
-    color: blue;
-
+    color: black;
+    text-decoration: underline;
 }
 
 .my-projects table a {
-    color: #595959;
+    color: black;
     font-family: Montserrat;
     font-style: normal;
     font-weight: 400;
@@ -129,7 +101,7 @@ body {
 }
 
 .my-projects table a:hover {
-    text-decoration: underline;
+    text-decoration: none;
     color: #FB6D3A; 
 }
 
@@ -142,7 +114,7 @@ body {
 }
 
 .my-projects ol li span {
-    color: #595959;
+    color: black;
     font-family: Montserrat;
     font-size: 16px;
     font-style: normal;
@@ -194,7 +166,7 @@ body {
 }
 
 .my-work-experience div p {
-    color: #A8A8A8;
+    color: black;
     font-size: 12px;
     font-weight: 400;
     line-height: 15px;
@@ -204,7 +176,7 @@ body {
 
 .separator {
     color: black;
-    font-weight: 400;
+    font-weight: 700;
 }
 
 .my-work-experience div ul {
@@ -212,7 +184,7 @@ body {
 }
 
 .my-work-experience div ul li {
-    color: #595959;
+    color: black;
     font-weight: normal;
     font-size: 14px;
     line-height: 24px;
@@ -251,7 +223,7 @@ body {
 }
 
 .my-education p {
-    color: #A8A8A8;
+    color: black;
     font-size: 12px;
     line-height: 15px;    
 }
@@ -263,16 +235,28 @@ body {
 .sidebar {
     height: auto;
     padding: 0px;
-    border-radius: 0px;
+    border-radius: 10px 0 10px 10px;
     font-style: normal;
     font-weight: normal;
-    background-color: #1E2939;
-    color: #fff;
+    background-color: lightslategray;
+    color: black;
+}
+
+.sidebar-content {
+    width: max-content;
+    padding: 0 10px;    
+}
+
+.sidebar-container {
+    padding: 0 0 0 20px;
 }
 
 .sidebar .my-photo {
-    width: 80%;
-    margin: 10%;
+    margin: 20px 0;
+    width: 100%;
+    max-width: 260px;
+    height: auto;
+    border-radius: 50%;
 }
 
 .sidebar h3 {
@@ -287,25 +271,15 @@ body {
     padding-top: 10px ;
 }
 
-.social-ico {
-    position:relative;
-    top: 5px;
-    padding-left: 15px;
-    height: 30px;
-    opacity: 0.5;
-
-}
-
-.social-ico:hover {
-    opacity: 1;
+.social-block span {
+    position: relative;
+    top: 30px;
 }
 
 .sidebar-contacts {
-    margin: 40px 0 0 40px;
     font-size: 22px;
     font-weight: 700;
     line-height: 27px;
-
 }
 
 .sidebar-contacts div span {
@@ -315,17 +289,16 @@ body {
 }
 
 .sidebar-contacts div a {
-    color: #fff;
+    color: black;
     padding-left: 10px;
     font-weight: normal;
     font-size: 14px;
-    text-decoration: none;
+    text-decoration: underline;
     line-height: 24px;
-    opacity: 0.5;
 }
 
 .sidebar-contacts div a:hover {
-    text-decoration: underline;
+    text-decoration: none;
     color: #FB6D3A;
 }
 
@@ -334,12 +307,12 @@ body {
 }
 
 .sidebar-my-skills {
-    margin: 0px 0 0 40px;
+    margin: 0px;
 }
 
 .sidebar-my-skills ul {
     padding: 0 0 0 20px;
-    color: white;
+    color: black;
     font-family: Montserrat;
     font-size: 14px;
     font-style: normal;
@@ -347,7 +320,6 @@ body {
     line-height: 24px;
     letter-spacing: 0em;
     text-align: left;
-
 }
 
 .sidebar-my-skills ul li {
@@ -355,12 +327,8 @@ body {
 }
 
 .sidebar-my-skills ul li::marker {
-    color: #FB6D3A;
+    color: black;
 }
 
-.myskills-cloud {
-    padding: 0px 55px 10px 55px;
-    /*width: 250px;*/
-    height: 250px;
-}
+
 
