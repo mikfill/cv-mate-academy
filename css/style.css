@@ -110,6 +110,10 @@ body {
     color: #FB6D3A; 
 }
 
+.my-projects table {
+    width: 100%;
+}
+
 .my-projects table ol li::marker {
     color: black;
 }
@@ -120,6 +124,7 @@ body {
 
 .my-projects table td ul {
     list-style: none;
+    text-align: center;
 }
 
 #projects-tech {
